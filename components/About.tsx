@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Layers, PenTool, Zap } from 'lucide-react';
+import { Award, Layers, PenTool, GraduationCap } from 'lucide-react';
 
 const StatCard = ({ icon: Icon, value, label }: { icon: any, value: string, label: string }) => (
   <div className="bg-white dark:bg-navy/50 border border-gray-200 dark:border-teal/20 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
@@ -50,21 +50,21 @@ const About: React.FC = () => {
             </div>
             
             <p className="text-lg text-slate dark:text-gray-300 leading-relaxed mb-6">
-                I am a senior Aerospace Engineering student with a deep passion for 
-                <span className="text-teal font-semibold"> autonomous systems</span> and 
-                <span className="text-teal font-semibold"> advanced manufacturing</span>.
+                I am a first year Aerospace Engineering student with a deep passion for 
+                <span className="text-teal font-semibold"> aerodynamics </span> and 
+                <span className="text-teal font-semibold"> mechatronics</span>.
             </p>
             <p className="text-lg text-slate dark:text-gray-300 leading-relaxed mb-8">
-                My work focuses on the intersection of hardware and software—taking designs from 
-                CAD concepts to flight-ready prototypes. Whether it's analyzing fluid dynamics 
-                or coding flight controllers, I thrive on solving complex technical challenges.
+                I am a highly motivated engineering student seeking an engineering internship position to
+                 develop my skills in project management/delivery, research, and technical proficiency. Eager to
+                 contribute to teams and gain hands-on experience in a real-world engineering environment.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-               <StatCard icon={Layers} value="15+" label="Projects" />
-               <StatCard icon={Award} value="4" label="Certifications" />
+               <StatCard icon={Layers} value="5+" label="Projects" />
+               <StatCard icon={Award} value="4" label="A-Levels" />
                <StatCard icon={PenTool} value="3" label="Years CAD" />
-               <StatCard icon={Zap} value="500+" label="Sim Hours" />
+               <StatCard icon={GraduationCap} value="1st" label="Average Grade" />
             </div>
           </motion.div>
 

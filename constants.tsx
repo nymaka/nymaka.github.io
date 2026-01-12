@@ -13,9 +13,9 @@ import {
 } from 'lucide-react';
 
 export const SOCIALS = {
-  email: "engineer@example.com",
-  linkedin: "https://linkedin.com",
-  github: "https://github.com",
+  email: "nirukt@gmail.com",
+  linkedin: "https://linkedin.com/in/niruktagrawal",
+  github: "https://github.com/nymaka",
 };
 
 export const RADAR_DATA: RadarData[] = [
@@ -46,34 +46,34 @@ export const SKILLS: Skill[] = [
 export const EXPERIENCE: Experience[] = [
   {
     id: '1',
-    role: 'B.S. Aerospace Engineering',
-    company: 'Tech University',
-    period: '2021 - Present',
-    description: 'Specializing in Aerodynamics and Propulsion. GPA: 3.9/4.0.',
+    role: 'M.Eng Aerospace Engineering',
+    company: 'University of Bath',
+    period: '2025 - Present',
+    description: 'Studying Design, Materials, Mechatronics, Mechanics and Thermofluids. Most enjoy design and mechatronics. Currently predicted a 1st.',
     type: 'Education'
   },
   {
     id: '2',
-    role: 'Mechatronics Intern',
-    company: 'AeroSpace Dynamics Inc.',
-    period: 'Summer 2023',
-    description: 'Designed and prototyped a servo-actuated control surface mechanism for UAVs. Reduced weight by 15% using topology optimization.',
+    role: 'Airline Operations',
+    company: 'Virgin Atlantic Airways',
+    period: 'Summer 2024',
+    description: 'Explored airline operations and maintenance practices. Learnt about the extensive safety precautions taken in commercial aviation along with new sustainability developments such as SAF and the Virgin Flight 100.',
     type: 'Work'
   },
   {
     id: '3',
-    role: 'Propulsion Lead',
-    company: 'Rocketry Club',
-    period: '2022 - 2023',
-    description: 'Led a team of 5 to design a hybrid rocket engine. Successfully reached 10,000ft altitude in competition.',
+    role: 'Aerodynamics & Design',
+    company: 'Team Bath Drones: First-year drone competition',
+    period: '2025 - 2026',
+    description: 'Worked with a team of 12 to design a drone against a set of competition regulations. Main focus was on aerodynamics design using CAD and CFD.',
     type: 'Work'
   },
   {
     id: '4',
-    role: 'CSWA - Certified SolidWorks Associate',
-    company: 'Dassault Systèmes',
-    period: '2022',
-    description: 'Certification ID: 123-456-789',
+    role: 'Young Enterprise: Wild Cards',
+    company: 'Wild Cards by Aylesbury Grammar School',
+    period: '2023 - 2024',
+    description: 'Led a team of 16 as Managing Director in the building of a small business from scratch and winning our local area competition. Our product focused on sustainability, generating a revenue of £1500+ in 4 months.',
     type: 'Certification'
   }
 ];

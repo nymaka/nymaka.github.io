@@ -45,14 +45,14 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block py-1 px-3 rounded-full bg-teal/10 text-teal border border-teal/30 font-mono text-xs tracking-wider mb-6">
-            WELCOME TO MY PORTFOLIO
+            WELCOME TO NIRUKT'S PORTFOLIO
           </span>
           <h1 className="text-5xl md:text-7xl font-sans font-bold text-navy dark:text-paper mb-6 tracking-tight">
             Aspiring <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-blue-500">Aerospace</span> Engineer
           </h1>
           <p className="text-lg md:text-xl text-slate dark:text-gray-400 mb-10 max-w-2xl mx-auto font-body leading-relaxed">
-            Bridging the gap between <strong>CAD Design</strong>, <strong>Mechatronics</strong>, and <strong>Aerodynamics</strong>. 
-            Building the future of flight, one prototype at a time.
+            Combining <strong>CAD</strong>, <strong>Aerodynamics</strong>, and <strong>Mechatronics</strong>. 
+            Exploring future developments in flight.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

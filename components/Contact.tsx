@@ -11,9 +11,9 @@ const Contact: React.FC = () => {
 
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
             
-            <h2 className="text-4xl md:text-5xl font-bold text-paper mb-6">Let's Build Something Fly.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-paper mb-6">Let's Fly.</h2>
             <p className="text-xl text-slate mb-12 max-w-2xl mx-auto">
-                I'm currently looking for full-time positions or internships in Aerospace Engineering and Mechatronics.
+                I'm currently looking for internships in Aerospace or Mechanical Engineering.
             </p>
 
             <a 
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
 
                 <div className="text-left md:border-l md:border-white/10 md:pl-12">
                     <h4 className="text-paper font-bold mb-2">Location</h4>
-                    <p className="text-slate">New York, NY (Open to Relocation)</p>
+                    <p className="text-slate">Bath & Buckinghamshire</p>
                 </div>
             </div>
 
