@@ -12,6 +12,8 @@ import {
   Settings
 } from 'lucide-react';
 
+export const RESUME_URL = "./resume.pdf"; 
+
 export const SOCIALS = {
   email: "nirukt@gmail.com",
   linkedin: "https://linkedin.com/in/niruktagrawal",
@@ -75,6 +77,19 @@ export const EXPERIENCE: Experience[] = [
     period: '2023 - 2024',
     description: 'Led a team of 16 as Managing Director in the building of a small business from scratch and winning our local area competition. Our product focused on sustainability, generating a revenue of £1500+ in 4 months.',
     type: 'Certification'
+  },
+  {
+    id: '5',
+    role: 'A-Levels & GCSEs',
+    company: 'Aylesbury Grammar School',
+    period: '2018 - 2025',
+    description: (
+      <>
+        <strong>Maths (A*), Physics (A*), Computer Science (A*), Further Maths (A) at A-level.</strong>{' '}
+        GCSEs of Maths (9), Additional Maths (A - max grade), Statistics (9), English Language (9), Physics (9), Chemistry (9), Biology (9), Geography (9), Business (8), Engineering (8), English Literature (7), German (7).
+      </>
+    ),
+    type: 'Education'
   }
 ];
 
