@@ -51,7 +51,7 @@ export const EXPERIENCE: Experience[] = [
     role: 'M.Eng Aerospace Engineering',
     company: 'University of Bath',
     period: '2025 - Present',
-    description: 'Studying Design, Materials, Mechatronics, Mechanics and Thermofluids. Most enjoy design and mechatronics. Currently predicted a 1st.',
+    description: 'Studying Design, Materials, Mechatronics, Mechanics and Thermofluids. I am most passionate about design and mechatronics. Currently predicted a 1st.',
     type: 'Education'
   },
   {
@@ -96,25 +96,24 @@ export const EXPERIENCE: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Hybrid Rocket Engine',
+    title: 'CFD Solver for 4-digit NACA Aerofoils',
     category: 'Aero',
     image: 'https://picsum.photos/800/600?random=1',
-    description: 'Design and simulation of a sub-scale hybrid rocket engine using paraffin wax and nitrous oxide.',
-    longDescription: 'This project involved the complete thermodynamic cycle analysis, nozzle design using the Method of Characteristics in MATLAB, and CFD validation in ANSYS Fluent. We manufactured the casing using carbon fiber composites and successfully test-fired the engine, achieving 500N of thrust for 10 seconds.',
-    techStack: ['MATLAB', 'ANSYS', 'SolidWorks', 'Composites'],
+    description: 'Created a web application that modeled airflow around NACA aerofoils.',
+    longDescription: 'Using python, I used a finite difference method along with a NACA aerofoil generator to make a web-based CFD solver. The web app also included a forum for discussion.',
+    techStack: ['Python', 'CFD', 'HTML/CSS', 'Databases', 'Maths'],
     links: {
-      github: '#',
-      docs: '#'
+      github: '#',  
     }
   },
   {
     id: '2',
-    title: '6-DOF Robotic Arm',
-    category: 'Mechatronics',
+    title: 'Door Detection System with Person Counter',
+    category: 'Mechatronics/Electronics',
     image: 'https://picsum.photos/800/600?random=2',
-    description: 'A fully 3D-printed robotic arm with inverse kinematics control written in Python.',
-    longDescription: 'Designed from scratch in Fusion 360, this arm utilizes high-torque stepper motors with closed-loop control. The control software implements inverse kinematics to move the end-effector to Cartesian coordinates. The system is powered by an ESP32 microcontroller.',
-    techStack: ['Python', 'Fusion 360', 'C++', 'ESP32', '3D Printing'],
+    description: 'Designed a calibrated ultrasonic sensing system for distance measurement and door-based person counting.',
+    longDescription: 'Developed a door-detection and person-counting system using an ultrasonic sensor, using distance measurements to detect people passing through a doorway and increment a counter. Documented the full design, experimental methodology, results, and limitations in a structured mechatronics report.',
+    techStack: ['MATLAB', 'Electric Circuits', 'Arduino', 'Signal Processing', 'Embedded Sytems', 'Report Writing'],
     links: {
       github: '#',
       demo: '#'
@@ -122,36 +121,36 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '3',
-    title: 'UAV Airfoil Optimization',
-    category: 'CAD',
+    title: 'CAD of Wing and Fuselage Geometry for a Drone',
+    category: 'Design',
     image: 'https://picsum.photos/800/600?random=3',
-    description: 'Parametric modeling and aerodynamic optimization of a high-lift airfoil for a heavy-lift drone.',
-    longDescription: 'Leveraged XFoil and a Python genetic algorithm script to optimize airfoil geometry for maximum lift-to-drag ratio at low Reynolds numbers. The final design was modeled in SolidWorks and validated in wind tunnel testing.',
-    techStack: ['SolidWorks', 'Python', 'XFoil', 'Aerodynamics'],
+    description: 'Generating a CAD model that can be used to generate molds for fuselage production and for CFD analysis.',
+    longDescription: 'Developed a CAD model after manual calculations of a drone deisgned to competition regulations. Model was then used for manufacturing and for CFD to make sure stable flight would be achieved.',
+    techStack: ['Autodesk Inventor', 'Ansys Fluent'],
     links: {
       docs: '#'
     }
   },
   {
     id: '4',
-    title: 'Mars Rover Chassis',
-    category: 'CAD',
+    title: 'Planetary Gearbox',
+    category: 'Design',
     image: 'https://picsum.photos/800/600?random=4',
-    description: 'Rocker-bogie suspension system design for a university rover challenge.',
-    longDescription: 'Detailed mechanical design of a rugged suspension system capable of traversing obstacles up to 2x wheel diameter. Performed FEA static analysis to ensure structural integrity under 3G loads.',
-    techStack: ['SolidWorks', 'FEA', 'Simulation'],
+    description: 'Designed a planetary gearbox with a stationary ring gear with appropriate movement constraints. Animated and produced exploded views.',
+    longDescription: 'Designed a multi-stage planetary gearbox using Inventor and integrated into a model of the lower compression stage of a turbofan, so that the main fan spins slower than the lower compression fans. Also produced a video with animations and technical views outlining its operation.',
+    techStack: ['Autodesk Inventor', 'Video Editing', 'Animation'],
     links: {
       github: '#'
     }
   },
   {
     id: '5',
-    title: 'Autonomous Drone Flight Controller',
-    category: 'Mechatronics',
+    title: 'Wireless Speaker',
+    category: 'Mechatronics/Electronics',
     image: 'https://picsum.photos/800/600?random=5',
-    description: 'Custom PCB design and PID flight control logic for a quadcopter.',
-    longDescription: 'Designed a custom flight controller PCB using KiCAD, integrating an STM32 processor and IMU. Wrote the stabilization and navigation firmware from scratch in C, implementing cascaded PID loops.',
-    techStack: ['KiCAD', 'C', 'STM32', 'Control Theory'],
+    description: 'Used broken headphones and laptop speakers to make a wireless speaker that worked using a 2.4 GHz receiver.',
+    longDescription: 'This was one of my first projects. I used the logic board from the broken headphones and used a multimeter to figure out inputs and outputs. I then soldered the laptop speakers for working wireless speakers. Later, to increase volume, I made a basic amplifier setup using a transistor, capacitor and some resistors.',
+    techStack: ['Electric Circuits', 'Audio', 'Sustainability', 'Reverse Engineering'],
     links: {
       github: '#',
       demo: '#'
@@ -159,14 +158,15 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '6',
-    title: 'Supersonic Nozzle Flow',
-    category: 'Aero',
+    title: 'Homerton Design Challenge: Solve a UN Goal',
+    category: 'Misc.',
     image: 'https://picsum.photos/800/600?random=6',
-    description: 'CFD study of shockwave formation in convergent-divergent nozzles.',
-    longDescription: 'A study focusing on the compressible flow behavior inside a rocket nozzle. Analyzed the effects of over-expansion and under-expansion on thrust efficiency.',
-    techStack: ['ANSYS Fluent', 'CFD', 'Gas Dynamics'],
+    description: 'Worked in a team to create a theoretical solution for food security using unmanned drones.',
+    longDescription: 'We designed an unmanned drone system that would monitor plants for abnormal signs indicating disease and then neutralise diseased plants, increasing farm yields through early detection. Our report won "Runner-up for Best Research" at Homerton College, Cambridge.',
+    techStack: ['Report Writing', 'Research', 'Teamwork', 'Sustainability'],
     links: {
       docs: '#'
-    }
+    } 
   }
+  
 ];

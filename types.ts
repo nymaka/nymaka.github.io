@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type Category = 'All' | 'CAD' | 'Mechatronics' | 'Aero';
+export type Category = 'All' | 'Design' | 'Mechatronics/Electronics' | 'Aero' | 'Misc.';
 
 export interface Project {
   id: string;

@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block py-3 px-5 rounded-full bg-teal/10 text-teal border border-teal/30 font-mono text-s tracking-wider mb-6">
+          <span className="inline-block py-3 px-5 rounded-full bg-teal/30 text-black/90 dark:text-white/90 border border-teal/100 font-semibold text-s tracking-wider mb-6">
             WELCOME TO NIRUKT'S PORTFOLIO
           </span>
           <h1 className="text-5xl md:text-7xl font-sans font-bold text-navy dark:text-paper mb-6 tracking-tight">

@@ -4,7 +4,7 @@ import { X, ExternalLink, Github, FileText } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import { Project, Category } from '../types';
 
-const Categories: Category[] = ['All', 'CAD', 'Mechatronics', 'Aero'];
+const Categories: Category[] = ['All', 'Design', 'Mechatronics/Electronics', 'Aero', 'Misc.'];
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<Category>('All');
