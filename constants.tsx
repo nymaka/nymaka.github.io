@@ -22,27 +22,26 @@ export const SOCIALS = {
 
 export const RADAR_DATA: RadarData[] = [
   { subject: 'CAD/Design', A: 95, fullMark: 100 },
-  { subject: 'Simulation', A: 85, fullMark: 100 },
-  { subject: 'Programming', A: 75, fullMark: 100 },
-  { subject: 'Electronics', A: 80, fullMark: 100 },
-  { subject: 'Analysis', A: 90, fullMark: 100 },
-  { subject: 'Prototyping', A: 88, fullMark: 100 },
+  { subject: 'Mathematics', A: 85, fullMark: 100 },
+  { subject: 'Materials', A: 75, fullMark: 100 },
+  { subject: 'Mechatronics', A: 85, fullMark: 100 },
+  { subject: 'Thermofluids', A: 70, fullMark: 100 },
+  { subject: 'Mechanics', A: 75, fullMark: 100 },
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'SolidWorks', level: 95, category: 'Software' },
-  { name: 'Fusion 360', level: 90, category: 'Software' },
-  { name: 'MATLAB', level: 85, category: 'Software' },
-  { name: 'ANSYS Fluent', level: 80, category: 'Software' },
+  { name: 'Inventor', level: 80, category: 'Software' },
+  { name: 'VS code', level: 75, category: 'Software' },
+  { name: 'Matlab', level: 70, category: 'Software' },
+  { name: 'ANSYS Fluent', level: 40, category: 'Software' },
   
-  { name: 'Python', level: 85, category: 'Programming' },
-  { name: 'C++', level: 70, category: 'Programming' },
-  { name: 'Arduino', level: 90, category: 'Programming' },
-  
-  { name: 'CFD', level: 80, category: 'Technical' },
-  { name: 'FEA', level: 85, category: 'Technical' },
-  { name: '3D Printing', level: 95, category: 'Technical' },
-  { name: 'PCB Design', level: 75, category: 'Technical' },
+  { name: 'Python', level: 90, category: 'Programming' },
+  { name: 'HTML/CSS', level: 70, category: 'Programming' },
+
+  { name: 'Video Production', level: 95, category: 'Technical' },
+  { name: 'Report Writing', level: 90, category: 'Technical' },
+  { name: 'Presentation skills', level: 85, category: 'Technical' },
+  { name: 'Engineering hand-drawings/sketches', level: 75, category: 'Technical' },
 ];
 
 export const EXPERIENCE: Experience[] = [
@@ -98,32 +97,31 @@ export const PROJECTS: Project[] = [
     id: '1',
     title: 'CFD Solver for 4-digit NACA Aerofoils',
     category: 'Aero',
-    image: 'https://picsum.photos/800/600?random=1',
+    images: ['./CFD1.png', './CFD2.png', './CFD3.png'],
     description: 'Created a web application that modeled airflow around NACA aerofoils.',
     longDescription: 'Using python, I used a finite difference method along with a NACA aerofoil generator to make a web-based CFD solver. The web app also included a forum for discussion.',
     techStack: ['Python', 'CFD', 'HTML/CSS', 'Databases', 'Maths'],
     links: {
-      github: '#',  
+      github: 'https://github.com/nymaka/CFD_Portfolio',  
     }
   },
   {
-    id: '2',
+    id: '2',  
     title: 'Door Detection System with Person Counter',
     category: 'Mechatronics/Electronics',
-    image: 'https://picsum.photos/800/600?random=2',
+    images: ['https://picsum.photos/800/600?random=2'],
     description: 'Designed a calibrated ultrasonic sensing system for distance measurement and door-based person counting.',
     longDescription: 'Developed a door-detection and person-counting system using an ultrasonic sensor, using distance measurements to detect people passing through a doorway and increment a counter. Documented the full design, experimental methodology, results, and limitations in a structured mechatronics report.',
     techStack: ['MATLAB', 'Electric Circuits', 'Arduino', 'Signal Processing', 'Embedded Sytems', 'Report Writing'],
     links: {
-      github: '#',
-      demo: '#'
+      docs: './Mechatronics.pdf',
     }
   },
   {
     id: '3',
     title: 'CAD of Wing and Fuselage Geometry for a Drone',
     category: 'Design',
-    image: 'https://picsum.photos/800/600?random=3',
+    images: ['https://picsum.photos/800/600?random=3'],
     description: 'Generating a CAD model that can be used to generate molds for fuselage production and for CFD analysis.',
     longDescription: 'Developed a CAD model after manual calculations of a drone deisgned to competition regulations. Model was then used for manufacturing and for CFD to make sure stable flight would be achieved.',
     techStack: ['Autodesk Inventor', 'Ansys Fluent'],
@@ -135,7 +133,7 @@ export const PROJECTS: Project[] = [
     id: '4',
     title: 'Planetary Gearbox',
     category: 'Design',
-    image: 'https://picsum.photos/800/600?random=4',
+    images: ['https://picsum.photos/800/600?random=4'],
     description: 'Designed a planetary gearbox with a stationary ring gear with appropriate movement constraints. Animated and produced exploded views.',
     longDescription: 'Designed a multi-stage planetary gearbox using Inventor and integrated into a model of the lower compression stage of a turbofan, so that the main fan spins slower than the lower compression fans. Also produced a video with animations and technical views outlining its operation.',
     techStack: ['Autodesk Inventor', 'Video Editing', 'Animation'],
@@ -147,7 +145,7 @@ export const PROJECTS: Project[] = [
     id: '5',
     title: 'Wireless Speaker',
     category: 'Mechatronics/Electronics',
-    image: 'https://picsum.photos/800/600?random=5',
+    images: ['https://picsum.photos/800/600?random=5'],
     description: 'Used broken headphones and laptop speakers to make a wireless speaker that worked using a 2.4 GHz receiver.',
     longDescription: 'This was one of my first projects. I used the logic board from the broken headphones and used a multimeter to figure out inputs and outputs. I then soldered the laptop speakers for working wireless speakers. Later, to increase volume, I made a basic amplifier setup using a transistor, capacitor and some resistors.',
     techStack: ['Electric Circuits', 'Audio', 'Sustainability', 'Reverse Engineering'],
@@ -160,7 +158,7 @@ export const PROJECTS: Project[] = [
     id: '6',
     title: 'Homerton Design Challenge: Solve a UN Goal',
     category: 'Misc.',
-    image: 'https://picsum.photos/800/600?random=6',
+    images: ['https://picsum.photos/800/600?random=6'],
     description: 'Worked in a team to create a theoretical solution for food security using unmanned drones.',
     longDescription: 'We designed an unmanned drone system that would monitor plants for abnormal signs indicating disease and then neutralise diseased plants, increasing farm yields through early detection. Our report won "Runner-up for Best Research" at Homerton College, Cambridge.',
     techStack: ['Report Writing', 'Research', 'Teamwork', 'Sustainability'],

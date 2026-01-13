@@ -61,7 +61,7 @@ const About: React.FC = () => {
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-               <StatCard icon={Layers} value="5+" label="Projects" />
+               <StatCard icon={Layers} value="6+" label="Projects" />
                <StatCard icon={Award} value="4" label="A-Levels" />
                <StatCard icon={PenTool} value="3" label="Years CAD" />
                <StatCard icon={GraduationCap} value="1st" label="Average Grade" />

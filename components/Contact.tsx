@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
                 className="inline-flex items-center gap-3 bg-teal hover:bg-teal/90 text-navy font-bold text-lg px-8 py-4 rounded-full transition-transform hover:scale-105 shadow-lg shadow-teal/20 mb-16"
             >
                 <Mail size={24} />
-                Send me an email
+                nirukt@gmail.com
             </a>
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-12 border-t border-white/10 pt-12">

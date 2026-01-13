@@ -6,7 +6,7 @@ export interface Project {
   id: string;
   title: string;
   category: Category;
-  image: string;
+  images: string[];
   description: string;
   longDescription: string;
   techStack: string[];
