@@ -29,7 +29,7 @@ export interface Experience {
   role: string;
   company: string;
   period: string;
-  description: string;
+  description: string | React.ReactNode;
   type: 'Education' | 'Work' | 'Certification';
 }
 

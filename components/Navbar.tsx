@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
               <Plane className="w-6 h-6 transform group-hover:-rotate-45 transition-transform duration-500" />
             </div>
             <span className={`font-sans font-bold text-xl tracking-wider ${scrolled || darkMode ? 'text-paper' : 'text-navy'} dark:text-paper`}>
-              AERO<span className="text-teal">FOLIO</span>
+              NIRUKT'S<span className="text-teal"> AEROFOLIO</span>
             </span>
           </div>
 
