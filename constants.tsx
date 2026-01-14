@@ -21,7 +21,7 @@ export const SOCIALS = {
 };
 
 export const RADAR_DATA: RadarData[] = [
-  { subject: 'CAD/Design', A: 95, fullMark: 100 },
+  { subject: 'Design', A: 95, fullMark: 100 },
   { subject: 'Mathematics', A: 85, fullMark: 100 },
   { subject: 'Materials', A: 75, fullMark: 100 },
   { subject: 'Mechatronics', A: 85, fullMark: 100 },
@@ -30,10 +30,10 @@ export const RADAR_DATA: RadarData[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'Inventor', level: 80, category: 'Software' },
+  { name: 'Inventor (CAD)', level: 80, category: 'Software' },
   { name: 'VS code', level: 75, category: 'Software' },
   { name: 'Matlab', level: 70, category: 'Software' },
-  { name: 'ANSYS Fluent', level: 40, category: 'Software' },
+  { name: 'ANSYS Fluent (CFD)', level: 40, category: 'Software' },
   
   { name: 'Python', level: 90, category: 'Programming' },
   { name: 'HTML/CSS', level: 70, category: 'Programming' },
@@ -97,7 +97,7 @@ export const PROJECTS: Project[] = [
     id: '1',
     title: 'CFD Solver for 4-digit NACA Aerofoils',
     category: 'Aero',
-    images: ['./CFD1.png', './CFD2.png', './CFD3.png'],
+    images: ['./CFD3.png', './CFD2.png', './CFD1.png'],
     description: 'Created a web application that modeled airflow around NACA aerofoils.',
     longDescription: 'Using python, I used a finite difference method along with a NACA aerofoil generator to make a web-based CFD solver. The web app also included a forum for discussion.',
     techStack: ['Python', 'CFD', 'HTML/CSS', 'Databases', 'Maths'],
@@ -109,7 +109,7 @@ export const PROJECTS: Project[] = [
     id: '2',  
     title: 'Door Detection System with Person Counter',
     category: 'Mechatronics/Electronics',
-    images: ['https://picsum.photos/800/600?random=2'],
+    images: ['./Mech1.jpg', './Mech2.jpg'],
     description: 'Designed a calibrated ultrasonic sensing system for distance measurement and door-based person counting.',
     longDescription: 'Developed a door-detection and person-counting system using an ultrasonic sensor, using distance measurements to detect people passing through a doorway and increment a counter. Documented the full design, experimental methodology, results, and limitations in a structured mechatronics report.',
     techStack: ['MATLAB', 'Electric Circuits', 'Arduino', 'Signal Processing', 'Embedded Sytems', 'Report Writing'],
@@ -121,49 +121,47 @@ export const PROJECTS: Project[] = [
     id: '3',
     title: 'CAD of Wing and Fuselage Geometry for a Drone',
     category: 'Design',
-    images: ['https://picsum.photos/800/600?random=3'],
+    images: ['./Drone1.png'],
     description: 'Generating a CAD model that can be used to generate molds for fuselage production and for CFD analysis.',
     longDescription: 'Developed a CAD model after manual calculations of a drone deisgned to competition regulations. Model was then used for manufacturing and for CFD to make sure stable flight would be achieved.',
     techStack: ['Autodesk Inventor', 'Ansys Fluent'],
     links: {
-      docs: '#'
+      
     }
   },
   {
     id: '4',
     title: 'Planetary Gearbox',
     category: 'Design',
-    images: ['https://picsum.photos/800/600?random=4'],
+    images: ['./Gearbox1.png', './Gearbox4.png', './Gearbox2.png', './Gearbox3.png'],
     description: 'Designed a planetary gearbox with a stationary ring gear with appropriate movement constraints. Animated and produced exploded views.',
     longDescription: 'Designed a multi-stage planetary gearbox using Inventor and integrated into a model of the lower compression stage of a turbofan, so that the main fan spins slower than the lower compression fans. Also produced a video with animations and technical views outlining its operation.',
     techStack: ['Autodesk Inventor', 'Video Editing', 'Animation'],
     links: {
-      github: '#'
+      demo: 'https://youtu.be/gF0EGQPlPKw'
     }
   },
   {
     id: '5',
-    title: 'Wireless Speaker',
+    title: 'Recycled Wireless Speaker',
     category: 'Mechatronics/Electronics',
-    images: ['https://picsum.photos/800/600?random=5'],
+    images: ['Speaker1.jpg'],
     description: 'Used broken headphones and laptop speakers to make a wireless speaker that worked using a 2.4 GHz receiver.',
     longDescription: 'This was one of my first projects. I used the logic board from the broken headphones and used a multimeter to figure out inputs and outputs. I then soldered the laptop speakers for working wireless speakers. Later, to increase volume, I made a basic amplifier setup using a transistor, capacitor and some resistors.',
     techStack: ['Electric Circuits', 'Audio', 'Sustainability', 'Reverse Engineering'],
     links: {
-      github: '#',
-      demo: '#'
     }
   },
   {
     id: '6',
     title: 'Homerton Design Challenge: Solve a UN Goal',
     category: 'Misc.',
-    images: ['https://picsum.photos/800/600?random=6'],
+    images: ['./Homerton.png'],
     description: 'Worked in a team to create a theoretical solution for food security using unmanned drones.',
     longDescription: 'We designed an unmanned drone system that would monitor plants for abnormal signs indicating disease and then neutralise diseased plants, increasing farm yields through early detection. Our report won "Runner-up for Best Research" at Homerton College, Cambridge.',
     techStack: ['Report Writing', 'Research', 'Teamwork', 'Sustainability'],
     links: {
-      docs: '#'
+      docs: './Homerton.pdf'
     } 
   }
   

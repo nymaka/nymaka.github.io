@@ -32,7 +32,7 @@ const ProjectCard: React.FC<{ project: Project; onClick: () => void }> = ({ proj
       <div className="w-full h-full bg-white dark:bg-navy rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-white/5 transition-transform duration-500 group-hover:-translate-y-2">
         {/* Image Area */}
         <div className="h-48 overflow-hidden relative bg-navy/10">
-          <div className="absolute inset-0 bg-navy/20 group-hover:bg-navy/0 transition-colors z-10"></div>
+          <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/0 transition-colors z-10"></div>
           
           {/* 
              CRITICAL FIXES FOR SLIDING:

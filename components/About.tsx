@@ -27,7 +27,7 @@ const About: React.FC = () => {
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 border-navy dark:border-teal/30">
                 {/* Placeholder for professional photo */}
                 <img 
-                    src="https://picsum.photos/800/800?grayscale" 
+                    src="./me.jpg" 
                     alt="Engineer working" 
                     className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                 />
