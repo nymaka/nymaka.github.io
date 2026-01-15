@@ -12,7 +12,7 @@ const StatCard = ({ icon: Icon, value, label }: { icon: any, value: string, labe
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-paper dark:bg-navy relative">
+    <section id="about" className="py-24 bg-paper dark:bg-navy relative transition-all duration-300 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -62,10 +62,10 @@ const About: React.FC = () => {
 
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 ">
-               <StatCard icon={Layers} value="6+" label="Projects" />
+               <StatCard icon={GraduationCap} value="1st" label="Average Grade"/>
                <StatCard icon={Award} value="A*A*A*A" label="A-Levels" />
                <StatCard icon={PenTool} value="3" label="Years CAD" />
-               <StatCard icon={GraduationCap} value="1st" label="Average Grade" />
+               <StatCard icon={Layers} value="6+" label="Projects" />
         </div>
 
       </div>

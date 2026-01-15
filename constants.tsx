@@ -171,8 +171,8 @@ export const CERTIFICATION: Experience[] = [
   {
     id: '3',
     role: 'Virgin Atlantic Arkright Scholarship',
-    company: 'Virgin Atlantic Airways & Arkwright',
-    period: '2018 - 2025',
+    company: 'Virgin Atlantic Airways & Arkwright Scholarships',
+    period: '2023 - 2025',
     description: ('Was awarded this prestigious scholarship after an aptitude test and interview, gaining me access to a mentor who helped me understand more of the intricacies of the aviation industry.'),
     type: 'Certification'
   }

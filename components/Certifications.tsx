@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="pt-0 pb-24 bg-gray-50 dark:bg-[#021d33]">
+    <section id="experience" className="pt-0 pb-24 bg-gray-50 dark:bg-[#021d33] transition-all duration-300 overflow-x-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex justify-between items-end mb-16">
+        <div className="flex justify-between items-end mb-4">
             <div>
                 <h2 className="text-4xl font-bold text-navy dark:text-paper mb-2">Certification & Education</h2>
                 <div className="w-20 h-1 bg-red rounded-full"></div>
@@ -51,13 +51,8 @@ const Experience: React.FC = () => {
                 );
             })}
         </div>
-        
-        <div className="mt-12 sm:hidden">
-             <button className="w-full flex items-center justify-center gap-2 bg-navy text-white px-4 py-3 rounded hover:bg-navy/80 dark:bg-teal dark:text-navy transition-colors font-medium">
-                <Download size={18} /> Download Resume
-            </button>
-        </div>
-
+    
+            
       </div>
     </section>
   );

@@ -128,7 +128,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="py-24 bg-gray-50 dark:bg-[#021d33] relative">
+    <section id="projects" className="py-24 bg-gray-50 dark:bg-[#021d33] relative transition-all overflow-x-hidden duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

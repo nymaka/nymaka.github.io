@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="py-24 bg-paper dark:bg-navy overflow-hidden">
+    <section id="skills" className="py-24 bg-paper dark:bg-navy overflow-hidden transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">

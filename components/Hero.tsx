@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative h-screen w-full flex items-center justify-center overflow-x-hidden transition-all duration-300 overflow-hidden">
       
       {/* Background Grid - CSS Pattern */}
       <div className="absolute inset-0 z-0 opacity-20 dark:opacity-10 pointer-events-none">

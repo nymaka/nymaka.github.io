@@ -13,11 +13,11 @@ const Experience: React.FC = () => {
   }, []);
 
   return (
-    <section id="experience" className="pt-24 pb-20 bg-gray-50 dark:bg-[#021d33]">
+    <section id="experience" className="pt-24 pb-20 bg-gray-50 dark:bg-[#021d33] transition-all duration-300 overflow-x-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-16 gap-6">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-4 gap-6">
             <div>
                 <h2 className="text-4xl font-bold text-navy dark:text-paper mb-2">Experience</h2>
                 <div className="w-20 h-1 bg-red rounded-full"></div>
@@ -39,6 +39,23 @@ const Experience: React.FC = () => {
                     <Download size={18} /> Download
                 </a>
             </div>
+        </div>
+
+        {/* Mobile Buttons */}
+        <div className="mb-4 sm:hidden grid grid-cols-2 gap-4">
+            <button 
+                onClick={() => setShowResume(true)}
+                className="flex items-center justify-center gap-2 border border-navy text-navy px-4 py-3 rounded hover:bg-navy/10 dark:border-teal dark:text-teal dark:hover:bg-teal/10 transition-colors font-medium"
+            >
+                <Eye size={18} /> View CV
+            </button>
+            <a 
+                href={RESUME_URL}
+                download="Nirukts_CV.pdf"
+                className="flex items-center justify-center gap-2 bg-navy text-white px-4 py-3 rounded hover:bg-navy/80 dark:bg-teal dark:text-navy transition-colors font-medium"
+            >
+                <Download size={18} /> Download
+            </a>
         </div>
 
         {/* Timeline */}
@@ -79,22 +96,7 @@ const Experience: React.FC = () => {
             })}
         </div>
         
-        {/* Mobile Buttons */}
-        <div className="mt-12 sm:hidden grid grid-cols-2 gap-4">
-            <button 
-                onClick={() => setShowResume(true)}
-                className="flex items-center justify-center gap-2 border border-navy text-navy px-4 py-3 rounded hover:bg-navy/10 dark:border-teal dark:text-teal dark:hover:bg-teal/10 transition-colors font-medium"
-            >
-                <Eye size={18} /> View CV
-            </button>
-            <a 
-                href={RESUME_URL}
-                download="Nirukts_CV.pdf"
-                className="flex items-center justify-center gap-2 bg-navy text-white px-4 py-3 rounded hover:bg-navy/80 dark:bg-teal dark:text-navy transition-colors font-medium"
-            >
-                <Download size={18} /> Download
-            </a>
-        </div>
+        
 
       </div>
 
