@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { EXPERIENCE, RESUME_URL } from '../constants';
 import { Briefcase, GraduationCap, Award, Download, Eye, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -6,14 +6,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Experience: React.FC = () => {
   const [showResume, setShowResume] = useState(false);
 
+  useEffect(() => {
+    const handleOpenResume = () => setShowResume(true);
+    window.addEventListener('open-resume-modal', handleOpenResume);
+    return () => window.removeEventListener('open-resume-modal', handleOpenResume);
+  }, []);
+
   return (
-    <section id="experience" className="py-24 bg-gray-50 dark:bg-[#021d33]">
+    <section id="experience" className="pt-24 pb-20 bg-gray-50 dark:bg-[#021d33]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-16 gap-6">
             <div>
-                <h2 className="text-4xl font-bold text-navy dark:text-paper mb-2">Experience & Education</h2>
+                <h2 className="text-4xl font-bold text-navy dark:text-paper mb-2">Experience</h2>
                 <div className="w-20 h-1 bg-red rounded-full"></div>
             </div>
             

@@ -55,20 +55,19 @@ const About: React.FC = () => {
                 <span className="text-teal font-semibold"> mechatronics</span>.
             </p>
             <p className="text-lg text-slate dark:text-gray-300 leading-relaxed mb-8">
-                I am a highly motivated engineering student seeking an engineering internship position to
-                 develop my skills in project management/delivery, research, and technical proficiency. Eager to
-                 contribute to teams and gain hands-on experience in a real-world engineering environment.
+                My journey began at age 10 building an Arduino-based obstacle-avoiding car, sparking my curiosity about how systems interact through coding and mechanics. Since then, I've explored fluid dynamics by coding a Python-based airflow simulator, gained hands-on experience through a Virgin Atlantic Arkwright Scholarship and led sustainable projects like a plantable greetings card business. I am eager to contribute to teams and gain hands-on experience in a real-world engineering environment.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-               <StatCard icon={Layers} value="6+" label="Projects" />
-               <StatCard icon={Award} value="4" label="A-Levels" />
-               <StatCard icon={PenTool} value="3" label="Years CAD" />
-               <StatCard icon={GraduationCap} value="1st" label="Average Grade" />
-            </div>
           </motion.div>
 
         </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 ">
+               <StatCard icon={Layers} value="6+" label="Projects" />
+               <StatCard icon={Award} value="A*A*A*A" label="A-Levels" />
+               <StatCard icon={PenTool} value="3" label="Years CAD" />
+               <StatCard icon={GraduationCap} value="1st" label="Average Grade" />
+        </div>
+
       </div>
     </section>
   );

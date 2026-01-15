@@ -38,23 +38,14 @@ export const SKILLS: Skill[] = [
   { name: 'Python', level: 90, category: 'Programming' },
   { name: 'HTML/CSS', level: 70, category: 'Programming' },
 
-  { name: 'Video Production', level: 95, category: 'Technical' },
-  { name: 'Report Writing', level: 90, category: 'Technical' },
-  { name: 'Presentation skills', level: 85, category: 'Technical' },
+  { name: 'Presentation/Report Skills', level: 90, category: 'Technical' },
   { name: 'Engineering hand-drawings/sketches', level: 75, category: 'Technical' },
+  { name: 'Workshop (Manual and Computerised) ', level: 70, category: 'Technical' },
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
     id: '1',
-    role: 'M.Eng Aerospace Engineering',
-    company: 'University of Bath',
-    period: '2025 - Present',
-    description: 'Studying Design, Materials, Mechatronics, Mechanics and Thermofluids. I am most passionate about design and mechatronics. Currently predicted a 1st.',
-    type: 'Education'
-  },
-  {
-    id: '2',
     role: 'Airline Operations',
     company: 'Virgin Atlantic Airways',
     period: 'Summer 2024',
@@ -62,7 +53,7 @@ export const EXPERIENCE: Experience[] = [
     type: 'Work'
   },
   {
-    id: '3',
+    id: '2',
     role: 'Aerodynamics & Design',
     company: 'Team Bath Drones: First-year drone competition',
     period: '2025 - 2026',
@@ -70,26 +61,13 @@ export const EXPERIENCE: Experience[] = [
     type: 'Work'
   },
   {
-    id: '4',
+    id: '3',
     role: 'Young Enterprise: Wild Cards',
     company: 'Wild Cards by Aylesbury Grammar School',
     period: '2023 - 2024',
     description: 'Led a team of 16 as Managing Director in the building of a small business from scratch and winning our local area competition. Our product focused on sustainability, generating a revenue of £1500+ in 4 months.',
-    type: 'Certification'
+    type: 'Work'
   },
-  {
-    id: '5',
-    role: 'A-Levels & GCSEs',
-    company: 'Aylesbury Grammar School',
-    period: '2018 - 2025',
-    description: (
-      <>
-        <strong>Maths (A*), Physics (A*), Computer Science (A*), Further Maths (A) at A-level.</strong>{' '}
-        GCSEs of Maths (9), Additional Maths (A - max grade), Statistics (9), English Language (9), Physics (9), Chemistry (9), Biology (9), Geography (9), Business (8), Engineering (8), English Literature (7), German (7).
-      </>
-    ),
-    type: 'Education'
-  }
 ];
 
 export const PROJECTS: Project[] = [
@@ -165,4 +143,37 @@ export const PROJECTS: Project[] = [
     } 
   }
   
+
+
+];
+export const CERTIFICATION: Experience[] = [
+  {
+    id: '1',
+    role: 'M.Eng Aerospace Engineering',
+    company: 'University of Bath',
+    period: '2025 - Present',
+    description: 'Studying Design, Materials, Mechatronics, Mechanics and Thermofluids. I am most passionate about design and mechatronics. Currently predicted a 1st.',
+    type: 'Education' 
+  },
+  {
+    id: '2',
+    role: 'A-Levels & GCSEs',
+    company: 'Aylesbury Grammar School',
+    period: '2018 - 2025',
+    description: (
+      <>
+        <strong>Maths (A*), Physics (A*), Computer Science (A*), Further Maths (A) at A-level.</strong>{' '}
+        GCSEs of Maths (9), Additional Maths (A - max grade), Statistics (9), English Language (9), Physics (9), Chemistry (9), Biology (9), Geography (9), Business (8), Engineering (8), English Literature (7), German (7).
+      </>
+    ),
+    type: 'Education'
+  },
+  {
+    id: '3',
+    role: 'Virgin Atlantic Arkright Scholarship',
+    company: 'Virgin Atlantic Airways & Arkwright',
+    period: '2018 - 2025',
+    description: ('Was awarded this prestigious scholarship after an aptitude test and interview, gaining me access to a mentor who helped me understand more of the intricacies of the aviation industry.'),
+    type: 'Certification'
+  }
 ];

@@ -217,13 +217,13 @@ const Projects: React.FC = () => {
                     <>
                         <button 
                             onClick={prevModalImage}
-                            className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/30 hover:bg-teal text-white rounded-full backdrop-blur-sm transition-all z-10 opacity-0 group-hover:opacity-100"
+                            className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/30 hover:bg-teal text-white rounded-full backdrop-blur-sm transition-all z-10 opacity-40 group-hover:opacity-100"
                         >
                             <ChevronLeft size={24} />
                         </button>
                         <button 
                             onClick={nextModalImage}
-                            className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/30 hover:bg-teal text-white rounded-full backdrop-blur-sm transition-all z-10 opacity-0 group-hover:opacity-100"
+                            className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/30 hover:bg-teal text-white rounded-full backdrop-blur-sm transition-all z-10 opacity-40 group-hover:opacity-100"
                         >
                             <ChevronRight size={24} />
                         </button>
@@ -240,13 +240,10 @@ const Projects: React.FC = () => {
                         </div>
                     </>
                 )}
-
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-navy to-transparent p-8 pointer-events-none z-10">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white">{selectedProject.title}</h3>
-                </div>
               </div>
 
               <div className="p-8">
+                <h3 className="text-3xl md:text-4xl font-bold text-navy dark:text-paper mb-4">{selectedProject.title}</h3>
                 <div className="flex flex-wrap gap-2 mb-6">
                     {selectedProject.techStack.map((tech) => (
                         <span key={tech} className="px-3 py-1 bg-teal/10 text-teal border border-teal/30 rounded-full text-sm font-medium">

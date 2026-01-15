@@ -18,6 +18,18 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleCVClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const experienceSection = document.getElementById('experience');
+    if (experienceSection) {
+      experienceSection.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => window.dispatchEvent(new Event('open-resume-modal')), 800);
+    }
+    
+
+  };
+
   const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
@@ -53,6 +65,13 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
               </a>
             ))}
             
+            <button 
+              onClick={handleCVClick}
+              className={`font-mono text-sm uppercase tracking-widest text-teal border border-teal px-4 py-2 rounded hover:bg-teal hover:text-navy transition-colors`}
+            >
+              CV
+            </button>
+
             <button 
               onClick={toggleTheme}
               className={`p-2 rounded-full hover:bg-white/10 transition-colors ${scrolled || darkMode ? 'text-paper' : 'text-navy'} dark:text-paper`}
@@ -93,6 +112,12 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
                 {link.name}
               </a>
             ))}
+            <button
+                onClick={handleCVClick}
+                className="block w-full text-left px-3 py-3 text-base font-medium text-teal border border-teal/30 rounded-md hover:bg-teal/10 transition-colors"
+              >
+                CV
+            </button>
           </div>
         </div>
       )}
